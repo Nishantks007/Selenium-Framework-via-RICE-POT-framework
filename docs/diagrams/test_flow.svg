@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <style>
+    .box{fill:#fff9f0;stroke:#92400e;stroke-width:2}
+    .title{font: bold 16px sans-serif; fill:#78350f}
+    .text{font: 13px sans-serif; fill:#78350f}
+    .arrow{stroke:#92400e;stroke-width:2;fill:none;marker-end:url(#arrow)}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#92400e"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="40" width="220" height="70" rx="8" class="box"/>
+  <text x="160" y="65" text-anchor="middle" class="title">Start Test</text>
+  <text x="160" y="88" text-anchor="middle" class="text">TestNG invokes test class</text>
+
+  <rect x="330" y="40" width="240" height="70" rx="8" class="box"/>
+  <text x="450" y="65" text-anchor="middle" class="title">Setup</text>
+  <text x="450" y="88" text-anchor="middle" class="text">@BeforeTest: init WebDriver, open URL</text>
+
+  <rect x="630" y="40" width="220" height="70" rx="8" class="box"/>
+  <text x="740" y="65" text-anchor="middle" class="title">Execute Steps</text>
+  <text x="740" y="88" text-anchor="middle" class="text">PageObject actions, asserts</text>
+
+  <path d="M270 75 L330 75" class="arrow"/>
+  <path d="M570 75 L630 75" class="arrow"/>
+
+  <rect x="330" y="150" width="240" height="70" rx="8" class="box"/>
+  <text x="450" y="175" text-anchor="middle" class="title">Validation</text>
+  <text x="450" y="198" text-anchor="middle" class="text">asserts: URL redirect or error visible</text>
+
+  <rect x="330" y="260" width="240" height="70" rx="8" class="box"/>
+  <text x="450" y="285" text-anchor="middle" class="title">Teardown</text>
+  <text x="450" y="308" text-anchor="middle" class="text">@AfterTest: quit WebDriver</text>
+
+  <path d="M740 110 L740 150" class="arrow"/>
+  <path d="M450 220 L450 260" class="arrow"/>
+
+  <rect x="50" y="260" width="220" height="70" rx="8" class="box"/>
+  <text x="160" y="285" text-anchor="middle" class="title">Outputs</text>
+  <text x="160" y="308" text-anchor="middle" class="text">Logs, Screenshots, ExtentReport</text>
+
+  <path d="M450 295 L270 295" class="arrow"/>
+</svg>
